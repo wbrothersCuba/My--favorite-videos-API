@@ -19,7 +19,7 @@ use Symfony\Component\Validator\Validation;
 class UserController extends AbstractController
 {
 
-    private function resjson($data, SerializerInterface $serializer)
+    private function resjson($data, SerializerInterface $serializer): Response
     {
         $json = $serializer->serialize($data, 'json');
         $response = new Response();
