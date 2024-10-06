@@ -13,7 +13,8 @@ Execute and create the tables
 symfony console doctrine:migrations:migrate
 The app is configured to work with CORS requests already, so you can make request using postman or testing directly in the frontend app. The API use JWT for authentication so you must generate a token and put it in the headers of the request.
 
-Endpoints
+## Endpoints
+
 POST /api_url/user/signup: For register new user.
 
 POST /api_url/user/signin: Login .
